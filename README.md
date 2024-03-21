@@ -52,3 +52,45 @@ Exemplo:<br>
 ```
 
 Veja como definimos o texto "Olá, mundo!" dentro de uma outra tag, chamada "Body", ao fechar o Body, avisamos ao HTML que entre a abertura e o fechamento está o conteúdo da nossa página.
+
+## FORM
+
+Agora que ja abordamos como funciona o HTML e suas TAG's, podemos abordar a tag mais usada no universo web.<br>
+Estou falando da tag\<form>, ela serve para avisar ao navegador que naquela parte do site teremos um formulário, como formulário me refiro a tudo aquilo que envia dados ao servidor, sendo dados cadastrais ou de contato por exemplo. Quando acessamos redes sociais, ou fomulários na internet, existem campos a serem preenchidos, esse campos do fomulário são os \<input>, input é uma tag que é inserida dentro do formulário que especifíca que naquele local do \<form> teremos um entrada de dados:<br>
+```
+<form>
+  <input type="text" id="username" name="username"><br> // Note que temos o tipo "text" específicado no input
+</form>
+```
+
+Note como o input vai dentro do forms, definindo assim que naquela parte está um campo para entrada de dados, podendo ser de várias formas: texto, número, senha, data, semana, mês etc.<br>
+São inumeras as possibilidades quando falamos de inputs, por isso vou apenas destacar as principais e mais vistas:<br>
+
+- \<input type="text"> = Esse input cria em nosso navegador uma barra para escrever textos alphanuméricos, ou seja, numeros, letras e caracteres especiais.
+- \<input type="number"> = Esse input fica restrito apenas a números, podendo ser limitado entre minimo e máximo.
+- \<input type="reset"> = Esse input cria um botão clicável que limpa os dados escritos no fomulário em que ele esta inserido.
+- \<input type="password"> = Esse input cria uma barra de texto, que ao escrever no apresenta **** par anão revelar o texto, ja que se trata de uma senha.
+- \<input type="date"> = Esse input cria uma caixa de texto com um ícone de agenda, para que seja escolhido uma data, ele não aceita outras datas
+- \<input type="month"> = Como o input de data porém só aceita meses como resposta.
+- \<input type="button"> = Cria um botão clicável, que pode ser atribuido a alguma função específica via código
+- \<input type="submit"> = Cria um botão com a função de enviar, ele envia os dados escritos no formulário.
+
+Agora que conehcemos os input do formulário, quero destacar um em especifico, do tipo "submit", esse botão mencionado envia os dados do nosso formulário para o servidor.<br>
+#### "Como ele faz isso?"
+O submit usa como base para envio as informações inseridas no fomulário, desde que bem específicadas, vou explicar, a tag \<forms> tem atributos igual aos inputs, porém são atributos relacionados ao funcionamento geral<br>
+```
+<form name= "formulario" method="POST" action = "#"> 
+  <input type="text" id="username" name="username"><br> // Note que temos o tipo "text" específicado no input
+</form>
+```
+
+Veja como o formulário tem 3 atributos, sendo eles o:<br>
+
+- name = Esse atributo define o nome do nosso fomulário, isso transforma ele em uma tag única e exclusiva, que para referenciar utilizamos o seu nome, ou comumente dito ID
+- action = Esse atributo define para onde nossos dados serão enviados, aceitando links ou caminhos de diretório, podendo ser o link do servidor.
+- method = Define de que forma os dados serão enviados, para isso temos duas opções: POST e GET.
+
+### Method:
+- POST = Nesse método os dados serão encapsulados como em um pacote e enviados via protocolo HTTPS, o que significa que serão criptografados e só serão abertos novamente pelo servidor, isso evita que alguém intercepte esse pacote e tenha acesso a dados sensíveis como senhas.
+- GET = Esse método envia os dados via URL da página, o problema desse método é que ele expõe os dados no URL, ele é mais usado para registro temporários e não-sensíveis, como estados "True" e "false" por exemplo.
+
