@@ -94,3 +94,24 @@ Veja como o formulário tem 3 atributos, sendo eles o:<br>
 - POST = Nesse método os dados serão encapsulados como em um pacote e enviados via protocolo HTTPS, o que significa que serão criptografados e só serão abertos novamente pelo servidor, isso evita que alguém intercepte esse pacote e tenha acesso a dados sensíveis como senhas.
 - GET = Esse método envia os dados via URL da página, o problema desse método é que ele expõe os dados no URL, ele é mais usado para registro temporários e não-sensíveis, como estados "True" e "false" por exemplo.
 
+## Formatação de texto
+
+Os texto no HTML ficam entre as tags, existem algumas tag específicas para texto além de \<h1>... temos varias tags disponíveis:
+- \<b> = Transforma o texto em <b>negrito</b>.
+- \<i> = Transforma o texto em <i>itálico</i>.
+- \<u> = Adiciona um <u>sublinhado</u> abaixo do texto.
+- \<blockquote> = Serve para colocar espaçamento lateral no texto, e assim criar uma citação, fechando o texto e formato de bloco.
+- \<sup> = Deixa qualquer caractere acima da paralavra anterior, exeplo: 10<sup>aqui esta o sup</sup>.
+- \<sub> = Parecido com o sup, porém deixa a proxima palavra abaixo e menor que a anterior: 10<sub>aqui esta o sub</sub>.
+- \<strong> = Também deixa em negrito, a diferença entre ele e o Bold, é por que o STRONG mostra ao navegador que aquela parte do texto é importante, e precisa ter uma ênfase, quando o bot de descrição for falar o texto para alguém.
+- \<mark> = Deixa um marca-texto na <mark>palavra</mark>
+
+### Definindo a Estrutura
+
+Para estruturar uma página HTML precisamos entender como funciona a estrutura de uma página, ja sabemos que o HTML é a estrutura, e o CSS é o estilo, porém o CSS precisa saber exatamente em que ponto da página precisa ser modificado, para isso nossa estrutura precisa estar bem construída e identificada, para nos auxiliar nisso temos tags principais:
+
+ - \<div> = Essa tag, cria uma limitação, ou seja, ela cria um bloco que contem tudo dentro dela, por padrão ela ocupa toda a horizontal do site, então ela faz um quebra de linha. Podemos imaginar a DIV como uma caixa onde colocamos todas as outras tags, e que podemos trabalhar somente nela pelo CSS.
+ - \<span> = Essa tag assim como a div, cria um bloco, mas não ocupa toda a página, apenas o espaço que foi delimitado.
+ - \<fieldset> = Essa tag segmenta uma área, a diferença entre ele e o DIV é que ele apresenta um linha, e possui uma tag chamada \<legend>, que cria uma legenda para aquele bloco em específico.
+ - \<iframe> = Essa tag consegue exportar de outros site um recurso, ou uma página inteira, muito utilizado em google maps e videos de youtube por exemplo. 
+
