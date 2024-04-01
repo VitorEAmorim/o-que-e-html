@@ -115,3 +115,17 @@ Para estruturar uma página HTML precisamos entender como funciona a estrutura d
  - \<fieldset> = Essa tag segmenta uma área, a diferença entre ele e o DIV é que ele apresenta um linha, e possui uma tag chamada \<legend>, que cria uma legenda para aquele bloco em específico.
  - \<iframe> = Essa tag consegue exportar de outros site um recurso, ou uma página inteira, muito utilizado em google maps e videos de youtube por exemplo. 
 
+### Tags de Mídias
+
+As tags de mídia englobam todo tipo de mídia possível em uma página web, videos, imagens e audios. As mídias enriquecem a experiência do usuário, e cada uma tem seus parâmetro e peculiaridades
+As mais utilizadas são:
+
+- \<img> = Essa tag importa imagens ou GIF's, porém ela tem parâmetros para que não fique desproporcional ao conteúdo. Ela precisa da tag src="link da imagem" para funcioanar, mas também precisa ser definido o tamanho com width="" height="" para ficar dentro do padrão. Mais parâmetros podem ser encontrados na documentação.
+- \<audio> = Essa tag Pai precisa de uma tag filho para funcionar que é semelhante ao parâmetro src="", porém é uma tag Filho chamada \<source src=""> com um parâmetro que identifica qual arquivo precisa ser aberto.
+essa tag possui o atributo "controls" que ativa os controles de audios como "Play\Stop" e "Volume", sem o controls o player audio fica invisível.
+- \<video> = Essa tag Pai precisa de uma tag filho chama <source> com uma parâmetro "src =""" para ele saber qual arquivo deve abrir, é importante que tenha dois formatos de vídeo, além do MP4 pode inserir na tag Pai, duas tags \<source> sendo uma MP4 e outra WebM por exemplo, assim se um navegador não funcionar MP4 ele tentará o Webm.
+- \<track> = Essa tag possuí diversos parâmetros, mas em geral ela serve para adicionar legendas a vídeos, podendo ser em outros idiomas, além disso ela tem outros parâmetros relacionado a acessibilidade, ela é uma tag filho da \<video>, para legendas ele usa o formato .vtt, que é um formato texto para legendas.
+- 
+
+Não podemos esquecer da Acessibilidade, toda mídia precisa conter os dois parâmetros indispensáveis, Title="" e Alt="", essas tags descrevem para quem tem deficiência visual o que está sendo mostrado na tela.
+Para testes pode ser utilizado o programa "NVDA" 
