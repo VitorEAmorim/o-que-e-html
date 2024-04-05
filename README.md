@@ -129,3 +129,16 @@ essa tag possui o atributo "controls" que ativa os controles de audios como "Pla
 
 Não podemos esquecer da Acessibilidade, toda mídia precisa conter os dois parâmetros indispensáveis, Title="" e Alt="", essas tags descrevem para quem tem deficiência visual o que está sendo mostrado na tela.
 Para testes pode ser utilizado o programa "NVDA" 
+
+### Tabelas 
+O conceito de tabelas no HTML é simples, para criar uma tabela precisamos criar uma espaço reservado para ela, um tag \<table> e dentro dela inserir linha e colunas, os dados serão identificados conforme suas tag's:
+
+\<tr> = Table-Row - Define uma linha na tabela, ao inserir Table-Data dentro, ele colocará os dados lado a lado formando uma linha
+\<td> = Table-data - Define o dado que vai nessa coluna/linha
+\<th> = Table-Head - É o cabeçalho da tabela, define o nome de cada coluna. Como regra, o nome deve ser pequeno, para mais detalhes usa-se o atributo (title="")
+\<thead> = Ele é usado apra agrupar as tags \<th> dentro, para melhor visualização do código.
+\<tbody> = Ele agrupa todos as tags \<tr> dentro, para melhor vizualização do código. É o corpo principal da página
+\<tfoot> = Ele agrupa \<tr> e \<td> referente ao fim da tabela, é o rodapé da nossa tabela.
+\<caption> = Ele define o título principal, ficará acima do cabeçalho.
+
+Para acessibilidade é interessante usar também na tag Table o atributo "sumary="Escreva a descrição detalhada da tabela", para mostrar para o leitor de tela exatamento do que se trata. 
