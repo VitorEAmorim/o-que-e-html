@@ -142,8 +142,10 @@ O conceito de tabelas no HTML é simples, para criar uma tabela precisamos criar
 
 Para acessibilidade é interessante usar também na tag Table o atributo "sumary="Escreva a descrição detalhada da tabela", para mostrar para o leitor de tela exatamento do que se trata. 
 
-##HTML SEMANTICO
+## HTML SEMANTICO
 
 O que é isso?
 
 Ja sabemos que o HTML é uma estrutura para a aplicação, que possui tag's para especificar cada parte, isso é importante para que quando o código for lido por humanos e/ou robôs seja compreensível cada parte, antigamente no HTML4 não tinhamos a variedade de Tags que temos hoje, então era comum criar sites com várias \<div> e separados por classes, como: class="header" por exemplo. Hoje em dia ainda existem esses tipos de estrutura, mas não é recomendado, num mundo cada vez mais diversificado, precisamos levantar o olhar para a acessibilidade, a internet precisa ser acessível a todos, por isso é muito importante o uso correto das tags para que os aplicativos de leitura de tela possam melhorar a experiência do usuário, sabendo em que parte da aplicação esta navegando. Semantica em HTML é trazer sentido ao código, mais clareza, dando mais peso às tags, para que sejam facilmente identificadas.
+
+Hoje a W3C (Padronização HTML e serviços web) tem um padrão que funciona por tras do HTML chamado de WAI-ARIA, ele é basicamente um padrão criado para ler a tela de forma mais compreensiva para o usúario, através disso podemos melhorar a interação do usuário com nossa aplicação. Com ARIA podemos destacar para o leitor que o menu esta aberto ou fechado por exemplo, melhorando o entendimento na navegação, existem diversos atributos que podem auxiliar a criação de sites mais acessíveis, que podem ser encontrados no site oficial da W3C.
