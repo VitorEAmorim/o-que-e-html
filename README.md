@@ -149,3 +149,21 @@ O que é isso?
 Ja sabemos que o HTML é uma estrutura para a aplicação, que possui tag's para especificar cada parte, isso é importante para que quando o código for lido por humanos e/ou robôs seja compreensível cada parte, antigamente no HTML4 não tinhamos a variedade de Tags que temos hoje, então era comum criar sites com várias \<div> e separados por classes, como: class="header" por exemplo. Hoje em dia ainda existem esses tipos de estrutura, mas não é recomendado, num mundo cada vez mais diversificado, precisamos levantar o olhar para a acessibilidade, a internet precisa ser acessível a todos, por isso é muito importante o uso correto das tags para que os aplicativos de leitura de tela possam melhorar a experiência do usuário, sabendo em que parte da aplicação esta navegando. Semantica em HTML é trazer sentido ao código, mais clareza, dando mais peso às tags, para que sejam facilmente identificadas.
 
 Hoje a W3C (Padronização HTML e serviços web) tem um padrão que funciona por tras do HTML chamado de WAI-ARIA, ele é basicamente um padrão criado para ler a tela de forma mais compreensiva para o usúario, através disso podemos melhorar a interação do usuário com nossa aplicação. Com ARIA podemos destacar para o leitor que o menu esta aberto ou fechado por exemplo, melhorando o entendimento na navegação, existem diversos atributos que podem auxiliar a criação de sites mais acessíveis, que podem ser encontrados no site oficial da W3C.
+
+### Web Scraping
+
+Para entender esse conceito precisamos entender o que significa Crawler, Crawlers são robôs que navegam na internet, entram em sites e extraem as partes mais importantes desse site, salvam em algum local para que esses dados sejam usado mais tarde, a Google por exemplo utiliza Crawler em seu site de busca, o robô entra no site, extrai os conteúdos mais importantes e salva no servidor, assim toda vez que alguém pesquisar algo relacionado ao conteúdo do site, o Crawler ja fez seu trabalho e entrega para você. O Crawler entende a importância das informações por palavras e tags, então usar a semântica do HTML corretamente, além de ajudar na manutenção do site, aumenta a visibilidade do site em sites de busca.
+
+## TAG'S para Web Scraping
+
+Como explicado acima, os Crawlers extraem informações mais importantes da página através das tags, a seguir vou mostrar as tags mais "fortes" para indicar os dados importantes da sua aplicação:
+
+-\<main> = Essa é a tag que contém o conteúdo principal daquela página, não pdoe haver mais de uma por documento.
+-\<adress> = Essa tag como diz o nome, especifica para o Crowler que ali existe uma informação de endereço.
+-\<aside> = Essa tag não carrega partes relevantes do site, normalmente possui propagandas ou links fora do escopo principal.
+-\<section> = Especifica que naquele trecho tem uma sessão relacionada ao conteúdo pesquisado.
+-\<nav> = Usado apenas para inserir links de navegação.
+-\<article> = Destinado para o artigo, conteúdo relacionado a página em sí
+-\<bloquote> = Destaca uma citação, pode estar relacionado ao artigo ou outro site
+-\<Q> = Como alternativa para citações menos relevantes temos essa tag.
+
