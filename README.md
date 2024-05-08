@@ -21,6 +21,7 @@ foi dito que o HTML é como um esqueleto, as TAG'S para nós, seria partes desse
 cada parte do nosso esqueleto tem uma função e um local especifico, e no HTML não é diferente.
 
  ### Como tag possuímos várias, mas vou listar as principais:
+ 
   - **\<title>**: É onde escrevemos o título da nossa página, ou seja, o nome que aparece na aba do navegador.
   - **\<html>** : Tudo que escrevemos no HTML precisa estar dentro dessa tag principal, que vai sustentar todo o esqueleto
   - **\<body>** : É a parte principal da página, onde tudo é escrito e exposto de forma principal.
@@ -158,12 +159,56 @@ Para entender esse conceito precisamos entender o que significa Crawler, Crawler
 
 Como explicado acima, os Crawlers extraem informações mais importantes da página através das tags, a seguir vou mostrar as tags mais "fortes" para indicar os dados importantes da sua aplicação:
 
--\<main> = Essa é a tag que contém o conteúdo principal daquela página, não pdoe haver mais de uma por documento.
--\<adress> = Essa tag como diz o nome, especifica para o Crowler que ali existe uma informação de endereço.
--\<aside> = Essa tag não carrega partes relevantes do site, normalmente possui propagandas ou links fora do escopo principal.
--\<section> = Especifica que naquele trecho tem uma sessão relacionada ao conteúdo pesquisado.
--\<nav> = Usado apenas para inserir links de navegação.
--\<article> = Destinado para o artigo, conteúdo relacionado a página em sí
--\<bloquote> = Destaca uma citação, pode estar relacionado ao artigo ou outro site
--\<Q> = Como alternativa para citações menos relevantes temos essa tag.
+- \<main> = Essa é a tag que contém o conteúdo principal daquela página, não pdoe haver mais de uma por documento.
+- \<adress> = Essa tag como diz o nome, especifica para o Crowler que ali existe uma informação de endereço.
+- \<aside> = Essa tag não carrega partes relevantes do site, normalmente possui propagandas ou links fora do escopo principal.
+- \<section> = Especifica que naquele trecho tem uma sessão relacionada ao conteúdo pesquisado.
+- \<nav> = Usado apenas para inserir links de navegação.
+- \<article> = Destinado para o artigo, conteúdo relacionado a página em sí
+- \<bloquote> = Destaca uma citação, pode estar relacionado ao artigo ou outro site
+- \<Q> = Como alternativa para citações menos relevantes temos essa tag.
+
+### Figure, Figcaption
+
+O figure é como um container que relaciona todas as tags dentro dele ao mesmo assunto, ou seja, quando um site de notícia posta uma notícia, que tem uma foto e a manchete, na verdade a imagem está dentro de uma Figure e o título é a figcaption daquela imagem, mostrando ao navegador que o texto está vinculado a imagem exigida:
+
+```
+<figure>
+ <img src='link-imagem.jpg'/>
+ <figcaption>Título da imagem<figcaption/>
+<figure/>
+```
+### Picture
+
+A tag Picture deifne a fonte da imagem baseado no tamanho da tela do usuário. Quando precisamos diminuir uma imagem sem perder a qualidade, o ideal é ter várias dela em versões e tamanho diferente em alta resolução, para não perder a qualidade com o responsive, podemos usar o Picture, que definirá uma imagem diferente para cada proporção:
+```
+<picture>
+ <source srcset='link-imagem-2.jpg' media = '(min-widht: 600px)'/>
+ <img src = "img-principal"/>
+<picture/> 
+```
+
+### SEO - Search Engine Optimization
+
+O SEO é um otimização de desempenho para mecanismos de busca, ele vai otimizar o seu site para ser melhor aproveitado em pesquisas. Por que isso é tão importante? Antigamente os meios de pesquisas e notícias eram livros e jornais, para isso precisavamos ir em uma livraria ou banca, a primeira coisa que nos chamava atenção sobre determinado tema era o que estava na vitrine, o Google é nossa vitrine e nosso site precisa estar entre os primeiros nesse assunto, essa é a importancia de se ter o SEO de um site, para isso temos um conjunto de tecnicas para estar na primeira linha das pesquisas, uma das técnicas ja está nesse documento, que é a importância do uso correto das tags.
+
+Dicas de SEO:
+
+Usar tags corretamente. O título que aparecerá nas pesquisas deve conter entre 50 e 60 caracteres para que não ultrapasse o limite visual do card.
+```
+<titlte>HTML | Página Inicial<title/>
+```
+Abaixo terá a descrição, que deve conter um contexto que fazem sentido com o título!
+```
+<meta name="description" content="Essa é a página principal do site. Clique já"
+```
+Usar a semântica HTML (Reforçando) corretamente para que o bot indexe corretamente seu site.
+
+Estudar o Schema.org, é um grupo de pesquisa que verifica um padrão para tags que melhoram a indexação do site.
+
+
+
+
+
+
 
