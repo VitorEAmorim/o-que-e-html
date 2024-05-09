@@ -67,14 +67,14 @@ Estou falando da tag\<form>, ela serve para avisar ao navegador que naquela part
 Note como o input vai dentro do forms, definindo assim que naquela parte está um campo para entrada de dados, podendo ser de várias formas: texto, número, senha, data, semana, mês etc.<br>
 São inumeras as possibilidades quando falamos de inputs, por isso vou apenas destacar as principais e mais vistas:<br>
 
-- \<input type="text"> = Esse input cria em nosso navegador uma barra para escrever textos alphanuméricos, ou seja, numeros, letras e caracteres especiais.
-- \<input type="number"> = Esse input fica restrito apenas a números, podendo ser limitado entre minimo e máximo.
-- \<input type="reset"> = Esse input cria um botão clicável que limpa os dados escritos no fomulário em que ele esta inserido.
-- \<input type="password"> = Esse input cria uma barra de texto, que ao escrever no apresenta **** par anão revelar o texto, ja que se trata de uma senha.
-- \<input type="date"> = Esse input cria uma caixa de texto com um ícone de agenda, para que seja escolhido uma data, ele não aceita outras datas
-- \<input type="month"> = Como o input de data porém só aceita meses como resposta.
-- \<input type="button"> = Cria um botão clicável, que pode ser atribuido a alguma função específica via código
-- \<input type="submit"> = Cria um botão com a função de enviar, ele envia os dados escritos no formulário.
+- **\<input type="text">** = Esse input cria em nosso navegador uma barra para escrever textos alphanuméricos, ou seja, numeros, letras e caracteres especiais.
+- **\<input type="number">** = Esse input fica restrito apenas a números, podendo ser limitado entre minimo e máximo.
+- **\<input type="reset">** = Esse input cria um botão clicável que limpa os dados escritos no fomulário em que ele esta inserido.
+- **\<input type="password">** = Esse input cria uma barra de texto, que ao escrever no apresenta **** par anão revelar o texto, ja que se trata de uma senha.
+- **\<input type="date">** = Esse input cria uma caixa de texto com um ícone de agenda, para que seja escolhido uma data, ele não aceita outras datas
+- **\<input type="month">** = Como o input de data porém só aceita meses como resposta.
+- **\<input type="button">** = Cria um botão clicável, que pode ser atribuido a alguma função específica via código
+- **\<input type="submit">** = Cria um botão com a função de enviar, ele envia os dados escritos no formulário.
 
 Agora que conehcemos os input do formulário, quero destacar um em especifico, do tipo "submit", esse botão mencionado envia os dados do nosso formulário para o servidor.<br>
 #### "Como ele faz isso?"
@@ -121,11 +121,11 @@ Para estruturar uma página HTML precisamos entender como funciona a estrutura d
 As tags de mídia englobam todo tipo de mídia possível em uma página web, videos, imagens e audios. As mídias enriquecem a experiência do usuário, e cada uma tem seus parâmetro e peculiaridades
 As mais utilizadas são:
 
-- \<img> = Essa tag importa imagens ou GIF's, porém ela tem parâmetros para que não fique desproporcional ao conteúdo. Ela precisa da tag src="link da imagem" para funcioanar, mas também precisa ser definido o tamanho com width="" height="" para ficar dentro do padrão. Mais parâmetros podem ser encontrados na documentação.
-- \<audio> = Essa tag Pai precisa de uma tag filho para funcionar que é semelhante ao parâmetro src="", porém é uma tag Filho chamada \<source src=""> com um parâmetro que identifica qual arquivo precisa ser aberto.
+- **\<img>** = Essa tag importa imagens ou GIF's, porém ela tem parâmetros para que não fique desproporcional ao conteúdo. Ela precisa da tag src="link da imagem" para funcioanar, mas também precisa ser definido o tamanho com width="" height="" para ficar dentro do padrão. Mais parâmetros podem ser encontrados na documentação.
+- **\<audio>** = Essa tag Pai precisa de uma tag filho para funcionar que é semelhante ao parâmetro src="", porém é uma tag Filho chamada \<source src=""> com um parâmetro que identifica qual arquivo precisa ser aberto.
 essa tag possui o atributo "controls" que ativa os controles de audios como "Play\Stop" e "Volume", sem o controls o player audio fica invisível.
-- \<video> = Essa tag Pai precisa de uma tag filho chama <source> com uma parâmetro "src =""" para ele saber qual arquivo deve abrir, é importante que tenha dois formatos de vídeo, além do MP4 pode inserir na tag Pai, duas tags \<source> sendo uma MP4 e outra WebM por exemplo, assim se um navegador não funcionar MP4 ele tentará o Webm.
-- \<track> = Essa tag possuí diversos parâmetros, mas em geral ela serve para adicionar legendas a vídeos, podendo ser em outros idiomas, além disso ela tem outros parâmetros relacionado a acessibilidade, ela é uma tag filho da \<video>, para legendas ele usa o formato .vtt, que é um formato texto para legendas.
+- **\<video>** = Essa tag Pai precisa de uma tag filho chama <source> com uma parâmetro "src =""" para ele saber qual arquivo deve abrir, é importante que tenha dois formatos de vídeo, além do MP4 pode inserir na tag Pai, duas tags \<source> sendo uma MP4 e outra WebM por exemplo, assim se um navegador não funcionar MP4 ele tentará o Webm.
+- **\<track>** = Essa tag possuí diversos parâmetros, mas em geral ela serve para adicionar legendas a vídeos, podendo ser em outros idiomas, além disso ela tem outros parâmetros relacionado a acessibilidade, ela é uma tag filho da \<video>, para legendas ele usa o formato .vtt, que é um formato texto para legendas.
 - 
 
 Não podemos esquecer da Acessibilidade, toda mídia precisa conter os dois parâmetros indispensáveis, Title="" e Alt="", essas tags descrevem para quem tem deficiência visual o que está sendo mostrado na tela.
@@ -133,13 +133,13 @@ Para testes pode ser utilizado o programa "NVDA"
 
 ### Tabelas 
 O conceito de tabelas no HTML é simples, para criar uma tabela precisamos criar uma espaço reservado para ela, um tag \<table> e dentro dela inserir linha e colunas, os dados serão identificados conforme suas tag's:
-- \<tr> = Table-Row - Define uma linha na tabela, ao inserir Table-Data dentro, ele colocará os dados lado a lado formando uma linha
-- \<td> = Table-data - Define o dado que vai nessa coluna/linha
-- \<th> = Table-Head - É o cabeçalho da tabela, define o nome de cada coluna. Como regra, o nome deve ser pequeno, para mais detalhes usa-se o atributo (title="")
-- \<thead> = Ele é usado apra agrupar as tags \<th> dentro, para melhor visualização do código.
-- \<tbody> = Ele agrupa todos as tags \<tr> dentro, para melhor vizualização do código. É o corpo principal da página
-- \<tfoot> = Ele agrupa \<tr> e \<td> referente ao fim da tabela, é o rodapé da nossa tabela.
-- \<caption> = Ele define o título principal, ficará acima do cabeçalho.
+- **\<tr>** = Table-Row - Define uma linha na tabela, ao inserir Table-Data dentro, ele colocará os dados lado a lado formando uma linha
+- **\<td>** = Table-data - Define o dado que vai nessa coluna/linha
+- **\<th>** = Table-Head - É o cabeçalho da tabela, define o nome de cada coluna. Como regra, o nome deve ser pequeno, para mais detalhes usa-se o atributo (title="")
+- **\<thead>** = Ele é usado apra agrupar as tags \<th> dentro, para melhor visualização do código.
+- **\<tbody>** = Ele agrupa todos as tags \<tr> dentro, para melhor vizualização do código. É o corpo principal da página
+- **\<tfoot>** = Ele agrupa \<tr> e \<td> referente ao fim da tabela, é o rodapé da nossa tabela.
+- **\<caption>** = Ele define o título principal, ficará acima do cabeçalho.
 
 Para acessibilidade é interessante usar também na tag Table o atributo "sumary="Escreva a descrição detalhada da tabela", para mostrar para o leitor de tela exatamento do que se trata. 
 
@@ -159,14 +159,14 @@ Para entender esse conceito precisamos entender o que significa Crawler, Crawler
 
 Como explicado acima, os Crawlers extraem informações mais importantes da página através das tags, a seguir vou mostrar as tags mais "fortes" para indicar os dados importantes da sua aplicação:
 
-- \<main> = Essa é a tag que contém o conteúdo principal daquela página, não pdoe haver mais de uma por documento.
-- \<adress> = Essa tag como diz o nome, especifica para o Crowler que ali existe uma informação de endereço.
-- \<aside> = Essa tag não carrega partes relevantes do site, normalmente possui propagandas ou links fora do escopo principal.
-- \<section> = Especifica que naquele trecho tem uma sessão relacionada ao conteúdo pesquisado.
-- \<nav> = Usado apenas para inserir links de navegação.
-- \<article> = Destinado para o artigo, conteúdo relacionado a página em sí
-- \<bloquote> = Destaca uma citação, pode estar relacionado ao artigo ou outro site
-- \<Q> = Como alternativa para citações menos relevantes temos essa tag.
+- **\<main>** = Essa é a tag que contém o conteúdo principal daquela página, não pdoe haver mais de uma por documento.
+- **\<adress>** = Essa tag como diz o nome, especifica para o Crowler que ali existe uma informação de endereço.
+- **\<aside>** = Essa tag não carrega partes relevantes do site, normalmente possui propagandas ou links fora do escopo principal.
+- **\<section>** = Especifica que naquele trecho tem uma sessão relacionada ao conteúdo pesquisado.
+- **\<nav>** = Usado apenas para inserir links de navegação.
+- **\<article>** = Destinado para o artigo, conteúdo relacionado a página em sí
+- **\<bloquote>** = Destaca uma citação, pode estar relacionado ao artigo ou outro site
+- **\<Q>** = Como alternativa para citações menos relevantes temos essa tag.
 
 ### Figure, Figcaption
 
@@ -205,6 +205,25 @@ Abaixo terá a descrição, que deve conter um contexto que fazem sentido com o 
 Usar a semântica HTML (Reforçando) corretamente para que o bot indexe corretamente seu site.
 
 Estudar o Schema.org, é um grupo de pesquisa que verifica um padrão para tags que melhoram a indexação do site.
+
+### Recursos especiais no HTML
+
+O HTML possuí tags para situações específicas onde as tags convencionais não atendem a necessidadade, a seguir darei exemplos:
+
+- **\<datalist>** - Essa tag é uma opção para o uso da tag \<option>, como visto nesse documento, a tag Option limita o usuário a escolhas específicas pré-definidas. Porém a tag option é inviável quando as opções são muitas, quando precisamos definir uma resposta entre 50 opções por exemplo, isso torna a experiência do usuário demorada. Como resolução a isso temos a tag datalist que é inserida juntamente ao options, essa tag cria um campo de pesquisa que vai sugerindo opções pré-definidas baseado no que o usuário procura.
+```
+<input list="browsers" type="serach" name="search"/>
+<datalist id="browser">
+    <option>Google</option>
+    <option>Microsoft Edge</option>
+    <option>Mozilla</option>
+</datalist>
+``` 
+No código acima temos três tags:
+
+- Input = Esse input cria uma barra do tipo "pesquisa" (search) que definirá a pesquisa do usuário e esta vinculada as sugestões do datalist
+- Datalist = Vinculado ao input ele irá sugerir suas opções baseado nas palavras e letras que entram no input
+- Option = Define a lista de sugestões que o datalist usará como base
 
 
 
