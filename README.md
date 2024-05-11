@@ -98,23 +98,23 @@ Veja como o formulário tem 3 atributos, sendo eles o:<br>
 ## Formatação de texto
 
 Os texto no HTML ficam entre as tags, existem algumas tag específicas para texto além de \<h1>... temos varias tags disponíveis:
-- \<b> = Transforma o texto em <b>negrito</b>.
-- \<i> = Transforma o texto em <i>itálico</i>.
-- \<u> = Adiciona um <u>sublinhado</u> abaixo do texto.
-- \<blockquote> = Serve para colocar espaçamento lateral no texto, e assim criar uma citação, fechando o texto e formato de bloco.
-- \<sup> = Deixa qualquer caractere acima da paralavra anterior, exeplo: 10<sup>aqui esta o sup</sup>.
-- \<sub> = Parecido com o sup, porém deixa a proxima palavra abaixo e menor que a anterior: 10<sub>aqui esta o sub</sub>.
-- \<strong> = Também deixa em negrito, a diferença entre ele e o Bold, é por que o STRONG mostra ao navegador que aquela parte do texto é importante, e precisa ter uma ênfase, quando o bot de descrição for falar o texto para alguém.
-- \<mark> = Deixa um marca-texto na <mark>palavra</mark>
+- **\<b>** = Transforma o texto em <b>negrito</b>.
+- **\<i>** = Transforma o texto em <i>itálico</i>.
+- **\<u>** = Adiciona um <u>sublinhado</u> abaixo do texto.
+- **\<blockquote>** = Serve para colocar espaçamento lateral no texto, e assim criar uma citação, fechando o texto e formato de bloco.
+- **\<sup>** = Deixa qualquer caractere acima da paralavra anterior, exeplo: 10<sup>aqui esta o sup</sup>.
+- **\<sub>** = Parecido com o sup, porém deixa a proxima palavra abaixo e menor que a anterior: 10<sub>aqui esta o sub</sub>.
+- **\<strong>** = Também deixa em negrito, a diferença entre ele e o Bold, é por que o STRONG mostra ao navegador que aquela parte do texto é importante, e precisa ter uma ênfase, quando o bot de descrição for falar o texto para alguém.
+- **\<mark>** = Deixa um marca-texto na <mark>palavra</mark>
 
 ### Definindo a Estrutura
 
 Para estruturar uma página HTML precisamos entender como funciona a estrutura de uma página, ja sabemos que o HTML é a estrutura, e o CSS é o estilo, porém o CSS precisa saber exatamente em que ponto da página precisa ser modificado, para isso nossa estrutura precisa estar bem construída e identificada, para nos auxiliar nisso temos tags principais:
 
- - \<div> = Essa tag, cria uma limitação, ou seja, ela cria um bloco que contem tudo dentro dela, por padrão ela ocupa toda a horizontal do site, então ela faz um quebra de linha. Podemos imaginar a DIV como uma caixa onde colocamos todas as outras tags, e que podemos trabalhar somente nela pelo CSS.
- - \<span> = Essa tag assim como a div, cria um bloco, mas não ocupa toda a página, apenas o espaço que foi delimitado.
- - \<fieldset> = Essa tag segmenta uma área, a diferença entre ele e o DIV é que ele apresenta um linha, e possui uma tag chamada \<legend>, que cria uma legenda para aquele bloco em específico.
- - \<iframe> = Essa tag consegue exportar de outros site um recurso, ou uma página inteira, muito utilizado em google maps e videos de youtube por exemplo. 
+ - **\<div>** = Essa tag, cria uma limitação, ou seja, ela cria um bloco que contem tudo dentro dela, por padrão ela ocupa toda a horizontal do site, então ela faz um quebra de linha. Podemos imaginar a DIV como uma caixa onde colocamos todas as outras tags, e que podemos trabalhar somente nela pelo CSS.
+ - **\<span>** = Essa tag assim como a div, cria um bloco, mas não ocupa toda a página, apenas o espaço que foi delimitado.
+ - **\<fieldset>** = Essa tag segmenta uma área, a diferença entre ele e o DIV é que ele apresenta um linha, e possui uma tag chamada \<legend>, que cria uma legenda para aquele bloco em específico.
+ - **\<iframe>** = Essa tag consegue exportar de outros site um recurso, ou uma página inteira, muito utilizado em google maps e videos de youtube por exemplo. 
 
 ### Tags de Mídias
 
@@ -212,8 +212,8 @@ O HTML possuí tags para situações específicas onde as tags convencionais nã
 
 - **\<datalist>** - Essa tag é uma opção para o uso da tag \<option>, como visto nesse documento, a tag Option limita o usuário a escolhas específicas pré-definidas. Porém a tag option é inviável quando as opções são muitas, quando precisamos definir uma resposta entre 50 opções por exemplo, isso torna a experiência do usuário demorada. Como resolução a isso temos a tag datalist que é inserida juntamente ao options, essa tag cria um campo de pesquisa que vai sugerindo opções pré-definidas baseado no que o usuário procura.
 ```
-<input list="browsers" type="serach" name="search"/>
-<datalist id="browser">
+<input list="browsers" type="search" name="search"/>
+<datalist id="browsers">
     <option>Google</option>
     <option>Microsoft Edge</option>
     <option>Mozilla</option>
@@ -221,9 +221,35 @@ O HTML possuí tags para situações específicas onde as tags convencionais nã
 ``` 
 No código acima temos três tags:
 
-- Input = Esse input cria uma barra do tipo "pesquisa" (search) que definirá a pesquisa do usuário e esta vinculada as sugestões do datalist
-- Datalist = Vinculado ao input ele irá sugerir suas opções baseado nas palavras e letras que entram no input
-- Option = Define a lista de sugestões que o datalist usará como base
+ - Input = Esse input cria uma barra do tipo "pesquisa" (search) que definirá a pesquisa do usuário e esta vinculada as sugestões do datalist
+ - Datalist = Vinculado ao input ele irá sugerir suas opções baseado nas palavras e letras que entram no input
+ - Option = Define a lista de sugestões que o datalist usará como base
+
+- **\<details>** - Essa tag cria um botão que expande e retrai um outro elemento HTML que está dentro dela, como por exemplo o botão de "Saiba mais" que ao clicar nele desce um texto explicativo relacionado a algum contexto. Por padrão ele traz um "saiba mais" mas podemos mudar utilizando a tag "Summary" dentro do datails.
+  
+```
+<details>
+     <summary>Clique aqui!</summary>
+     <p>Eu estava escondido!</p>
+</details>
+```
+
+Note que o details foi definido como "Clique aqui" pelo summary, e está escondendo o texto \<p>, que será revelado ao clicar.
+
+- \<meter> = O foco dessa tag é mostrar um grafico de medição, assim como termometros ou alocações de disco, ele mostrara uma barra colorida com preenchimento do valor atribuido a ele.
+Ele é muito confundido com o \<progress> mas tem objetivo diferente, mostra medidas e não contagens.
+
+```
+<meter max="100" min="0" value="50"></meter> -- O valores max e min, delimitam o tamanho da barra em questão de valor, ja o value define o valor que vai preencher a barra.
+```
+
+-\<progress> = O foco do progress é como diz seu nome, informar um progresso, seja de conclusão de carregamento ou até mesmo de formulários, esse sim é usado para carregamento de páginas, e tem uma sintaxe parecida com o \<meter>, porém é para um uso diferente
+
+```
+<progress max="100" min="0" value="50"></progress>
+```
+ 
+
 
 
 
