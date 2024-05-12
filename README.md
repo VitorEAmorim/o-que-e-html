@@ -243,14 +243,21 @@ Ele é muito confundido com o \<progress> mas tem objetivo diferente, mostra med
 <meter max="100" min="0" value="50"></meter> -- O valores max e min, delimitam o tamanho da barra em questão de valor, ja o value define o valor que vai preencher a barra.
 ```
 
--\<progress> = O foco do progress é como diz seu nome, informar um progresso, seja de conclusão de carregamento ou até mesmo de formulários, esse sim é usado para carregamento de páginas, e tem uma sintaxe parecida com o \<meter>, porém é para um uso diferente
+- \<progress> = O foco do progress é como diz seu nome, informar um progresso, seja de conclusão de carregamento ou até mesmo de formulários, esse sim é usado para carregamento de páginas, e tem uma sintaxe parecida com o \<meter>, porém é para um uso diferente
 
 ```
 <progress max="100" min="0" value="50"></progress>
 ```
+
+ ### CANVAS
+
+ Essa TAG no HTML é muito extensa, e o uso dela é limitado a sua criatividade, porque essa tag é feita para criar formas personalizadas dentro do HTML, sendo círculos, quadrados, triangulos e muitos outros.
+ Existe um site excelente para testar e treinar o uso do canvas. https://codepen.io/
+ O importante é entender que o canvas em conjunto com JS pode fazer uma infinidade de animações e trazer mais dinamismo e melhora na experiencia do usuário, outro uso comum são para gráficos.
+
+<a>https://codepen.io/tag/canvas</a>
+
  
-
-
 
 
 
