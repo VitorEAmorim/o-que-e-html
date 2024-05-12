@@ -258,7 +258,17 @@ Ele é muito confundido com o \<progress> mas tem objetivo diferente, mostra med
 <a>https://codepen.io/tag/canvas</a>
 
  
+### Atributos extras HTML5:
 
+A W3C sempre procura deixar o HTML mais atualizado as necessidades de desenvolvimento web, por isso introduziu novos atributos.
+
+- Autofocus = Deixa o elemento ja selecionado quando a página atualizar.
+- Placeholder = Permite colcoar um texto sugestivo dentro de um input, para por exemplos.
+- Maxlenght e Minlenght = Define o minimo e máximo número de caracteres aceitos para enviar os dados
+- Required = Torna obrigatório informar o dado para enviar.
+- Disable = Desabilita o preenchimento do campo, mas ainda é visível.
+- form = Referencia o input a algum formulário existente sem a necessidade de estar dentro da tag form.
+- contenteditable = Permite criar um campo editavel para o usuário
 
 
 
